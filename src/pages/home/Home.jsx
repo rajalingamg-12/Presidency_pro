@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
+import { NavLink } from "react-router-dom";
 
 import school1 from "../../assets/school1.jpeg";
 import school2 from "../../assets/school2.jpeg";
@@ -47,13 +48,13 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons">
-            <button>Admission is Going On </button>
-
-            {/* <button>OTHER BRANCH</button> */}
+            <NavLink to="/admission">
+              <button>Admission is Going On</button>
+            </NavLink>
           </div>
         </div>
       </section>
-      
+
       {/* Moving Skills Section */}
 
       <section className="skills-marquee">
