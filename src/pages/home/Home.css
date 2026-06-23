@@ -491,3 +491,190 @@ background: linear-gradient(
     transform: translateX(0);
   }
 }
+/* =========================
+   Tablet View (max-width: 992px)
+========================= */
+@media (max-width: 992px) {
+  .hero-content {
+    width: 85%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-buttons button {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .campus-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .flip-card {
+    width: 300px;
+    height: 250px;
+  }
+
+  .celebration-card {
+    width: 300px;
+  }
+
+  .celebration-card img {
+    height: 220px;
+  }
+
+  .campus-title,
+  .program-title,
+  .celebration-title {
+    font-size: 35px;
+  }
+}
+
+/* =========================
+   Mobile View (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero-content {
+    width: 95%;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .skills-marquee {
+    height: 45px;
+    margin-top: -45px;
+  }
+
+  .skills-track span {
+    font-size: 14px;
+    margin: 0 20px;
+  }
+
+  .campus-section,
+  .programs-section,
+  .celebrations-section {
+    padding: 60px 20px;
+  }
+
+  .campus-title,
+  .program-title,
+  .celebration-title {
+    font-size: 28px;
+  }
+
+  .campus-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .campus-card h2 {
+    font-size: 22px;
+  }
+
+  .campus-card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .flip-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card {
+    width: 100%;
+    max-width: 320px;
+    height: 240px;
+  }
+
+  .flip-card-front h2,
+  .flip-card-back h2 {
+    font-size: 22px;
+  }
+
+  .flip-para {
+    font-size: 18px;
+  }
+
+  .celebration-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .celebration-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .celebration-card img {
+    height: 200px;
+  }
+
+  .celebration-content h2 {
+    font-size: 20px;
+  }
+
+  .celebration-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================
+   Small Mobile (max-width: 480px)
+========================= */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-buttons button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .campus-title,
+  .program-title,
+  .celebration-title {
+    font-size: 24px;
+  }
+
+  .skills-track span {
+    font-size: 12px;
+  }
+}
