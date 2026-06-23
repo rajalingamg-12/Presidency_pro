@@ -233,35 +233,6 @@ const Home = () => {
 
         </div>
       </section>
-      {/* Moving Skills Section */}
-      <section className="skills-marquee">
-        <div className="skills-track">
-          <span>Practical Life Activities</span>
-          <span>Sensorial Development</span>
-          <span>Language Enrichment</span>
-          <span>Early Mathematics</span>
-          <span>Cultural Studies</span>
-          <span>Cosmic Education</span>
-          <span>Research-Based Learning</span>
-          <span>Moral Development</span>
-          <span>Collaborative Learning</span>
-          <span>Social Responsibility</span>
-          <span>Advanced Academics</span>
-
-          {/* Duplicate for smooth infinite loop */}
-          <span>Practical Life Activities</span>
-          <span>Sensorial Development</span>
-          <span>Language Enrichment</span>
-          <span>Early Mathematics</span>
-          <span>Cultural Studies</span>
-          <span>Cosmic Education</span>
-          <span>Research-Based Learning</span>
-          <span>Moral Development</span>
-          <span>Collaborative Learning</span>
-          <span>Social Responsibility</span>
-          <span>Advanced Academics</span>
-        </div>
-      </section>
 
     </div>
   );
