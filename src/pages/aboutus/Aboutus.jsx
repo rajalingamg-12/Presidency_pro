@@ -51,6 +51,47 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Leadership Section */}
+
+      <section className="leaders-section">
+        <h2 className="leaders-title fade-up">Our Leadership</h2>
+
+        <div className="leaders-container">
+
+             {/* Founder */}
+          <div className="leader-card founder-card">
+            <div className="leader-img">
+              <img src={school6} alt="Founder" />
+            </div>
+
+            <div className="leader-content">
+              <h3>Founder & Director</h3>
+              <h4>Mr. MICHAEL RAJA S</h4>
+              <p>
+                MBA AMI Diploma in Primary (3-6).<br/>
+                AMI Diploma in Adolescent (12-18).
+              </p>
+            </div>
+          </div>
+          {/* Co-Founder */}
+          <div className="leader-card director-card">
+            <div className="leader-img">
+              <img src={school6} alt="Co-Founder" />
+            </div>
+
+            <div className="leader-content">
+              <h3>Co-Founder</h3>
+              <h4>Mrs. MONISHA MICHAEL</h4>
+              <p>
+               B.Sc., B.Ed, <br/>
+               AMI Diploma in Elementary (6-12).
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="why-us fade-up">
         <h2>Why Choose Us?</h2>
