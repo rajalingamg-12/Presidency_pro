@@ -65,6 +65,72 @@ const Campuses = () => {
           <div className="facility-box">Activity Center</div>
         </div>
       </section>
+      
+
+      {/* Student Activities Section */}
+<section className="activities-section">
+  <div className="activities-header">
+    <h2>Student Activities & Innovation</h2>
+    <p>
+      Empowering students through creativity, leadership, sports, and
+      innovation-driven learning.
+    </p>
+  </div>
+
+  {/* Activity Cards */}
+  <div className="activities-grid">
+    <div className="activity-card">
+      <div className="activity-icon">🎨</div>
+      <h3>Creative Arts</h3>
+      <p>Encouraging imagination through drawing, painting, and crafts.</p>
+    </div>
+
+    <div className="activity-card">
+      <div className="activity-icon">⚽</div>
+      <h3>Sports Excellence</h3>
+      <p>Building discipline, teamwork, and leadership through sports.</p>
+    </div>
+
+    <div className="activity-card">
+      <div className="activity-icon">🎭</div>
+      <h3>Cultural Events</h3>
+      <p>Celebrating talent through music, dance, and drama performances.</p>
+    </div>
+
+    <div className="activity-card">
+      <div className="activity-icon">💡</div>
+      <h3>Innovation Lab</h3>
+      <p>Hands-on experiments and problem-solving activities for students.</p>
+    </div>
+  </div>
+
+  {/* Professional Timeline */}
+  <div className="journey-section">
+    <h3>Student Growth Journey</h3>
+
+    <div className="journey-line">
+      <div className="journey-step">
+        <span>01</span>
+        <p>Learning</p>
+      </div>
+
+      <div className="journey-step">
+        <span>02</span>
+        <p>Practice</p>
+      </div>
+
+      <div className="journey-step">
+        <span>03</span>
+        <p>Innovation</p>
+      </div>
+
+      <div className="journey-step">
+        <span>04</span>
+        <p>Success</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Campus Life */}
       <section className="campus-life">
