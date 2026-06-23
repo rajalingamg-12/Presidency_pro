@@ -1,0 +1,230 @@
+.admission-page {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.admission-hero {
+  height: 70vh;
+  background: linear-gradient(-45deg, #19c5b5, #f56baa, #f5a623, #48173f);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  position: relative;
+}
+
+.admission-overlay {
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  animation: fadeUp 1.5s ease;
+}
+
+.admission-overlay h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.admission-overlay p {
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+/* Floating Circles */
+.admission-hero::before,
+.admission-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  animation: float 6s infinite ease-in-out;
+}
+
+.admission-hero::before {
+  width: 180px;
+  height: 180px;
+  top: 15%;
+  left: 10%;
+}
+
+.admission-hero::after {
+  width: 220px;
+  height: 220px;
+  bottom: 10%;
+  right: 10%;
+}
+
+/* Form Section */
+.admission-form-section {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 40px;
+  color: #48173f;
+}
+
+.form-subtitle {
+  margin: 15px 0 40px;
+  color: gray;
+}
+
+/* Glassmorphism Form */
+.admission-form {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(18px);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  animation: slideUp 1.5s ease;
+}
+
+.admission-form input,
+.admission-form textarea {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.8);
+  font-size: 16px;
+  outline: none;
+  transition: 0.4s;
+}
+
+.admission-form input:focus,
+.admission-form textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(25,197,181,0.4);
+}
+
+/* Button */
+.admission-form button {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #19c5b5, #f56baa);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.admission-form button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(245,107,170,0.4);
+}
+
+/* Benefits Section */
+.admission-benefits {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.admission-benefits h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #48173f;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #19c5b5, #f56baa);
+  color: white;
+  transition: 0.4s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* Animations */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admission-overlay h1 {
+    font-size: 35px;
+  }
+
+  .admission-overlay p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .admission-form {
+    padding: 25px;
+  }
+
+  .form-container h2 {
+    font-size: 28px;
+  }
+
+  .admission-benefits {
+    padding: 50px 20px;
+  }
+}

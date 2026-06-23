@@ -1,0 +1,197 @@
+.about-page {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 70vh;
+  background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.about-overlay {
+  height: 100%;
+  background: #F57692;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  animation: fadeIn 2s ease;
+}
+
+.about-overlay h1 {
+  font-size: 55px;
+}
+
+.about-overlay p {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #48173f;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Vision Mission */
+.vision-mission {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 60px;
+}
+
+.card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(90deg, #19c5b5, #f56baa);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+/* Why Choose */
+.why-us {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #48173f;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.why-card {
+  padding: 30px;
+  border-radius: 15px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.why-card:hover {
+  transform: scale(1.05);
+}
+
+.why-card h3 {
+  margin-bottom: 15px;
+  color: #f56baa;
+}
+
+/* Animations */
+.fade-up {
+  animation: fadeUp 1.5s ease;
+}
+
+.fade-left {
+  animation: fadeLeft 1.5s ease;
+}
+
+.fade-right {
+  animation: fadeRight 1.5s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section,
+  .vision-mission {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-overlay h1 {
+    font-size: 35px;
+  }
+}

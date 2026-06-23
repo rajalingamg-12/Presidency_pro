@@ -1,0 +1,81 @@
+.campus-hero {
+  height: 100vh;
+  background: url("../../assets/school3.jpeg") center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.campus-overlay {
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.campus-overlay h1 {
+  font-size: 55px;
+}
+
+.campus-intro,
+.campus-life {
+  padding: 70px 60px;
+  text-align: center;
+}
+
+.campus-intro h2,
+.campus-life h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #48173f;
+}
+
+.campus-intro p,
+.campus-life p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.campus-facilities {
+  padding: 70px 60px;
+  text-align: center;
+}
+
+.campus-facilities h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.facility-box {
+  background: linear-gradient(90deg, #19c5b5, #f56baa);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.facility-box:hover {
+  transform: translateY(-8px);
+}
+
+@media (max-width: 768px) {
+  .facility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-overlay h1 {
+    font-size: 35px;
+  }
+}

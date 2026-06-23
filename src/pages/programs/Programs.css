@@ -1,0 +1,297 @@
+.program-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Hero Section */
+.program-hero {
+    height: 100vh;
+    background: url("../../assets/school11.jpeg") center/cover no-repeat;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Moving Letters */
+.moving-text {
+    font-size: 70px;
+    color: white;
+    display: flex;
+    gap: 8px;
+}
+
+.moving-text span {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+/* Letter Delay */
+.moving-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.moving-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.moving-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.moving-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.moving-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.moving-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.moving-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.moving-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.sub-text {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 800;
+    animation: fadeIn 2s ease;
+}
+
+/* Programs Section */
+.programs-section {
+    padding: 80px 60px;
+    background: #f9f9f9;
+}
+
+.program-title {
+    font-size: 42px;
+    color: #48173f;
+    margin-bottom: 50px;
+}
+
+/* Flip Cards Container */
+.flip-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Flip Card */
+.flip-card {
+    background: transparent;
+    width: 320px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Front Side */
+.flip-card-front {
+    background: linear-gradient(90deg, #f56baa, #f5a623);
+    color: rgb(25, 32, 53);
+}
+
+.flip-card-front h2 {
+    margin-bottom: 15px;
+}
+
+.flip-para {
+    font-size: 18px;
+    color: rgb(229, 7, 7);
+    font-weight: 500;
+}
+
+/* Back Side */
+.flip-card-back {
+    background: linear-gradient(90deg, #19c5b5, #f56baa);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    margin-bottom: 15px;
+}
+
+/* Learning Section */
+.learning-section {
+    padding: 80px 60px;
+    background: white;
+}
+
+.learning-title {
+    font-size: 40px;
+    color: #48173f;
+    margin-bottom: 40px;
+}
+
+.learning-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.learning-card {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #19c5b5, #f56baa);
+    color: white;
+    transition: 0.4s;
+}
+
+.learning-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Skills */
+.skills-section {
+    padding: 80px 60px;
+    background: #f9f9f9;
+}
+
+.skills-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-box {
+    padding: 25px;
+    background: #48173f;
+    color: white;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+/* Activities */
+.activities-section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.activities-title {
+    font-size: 40px;
+    color: #48173f;
+    margin-bottom: 20px;
+}
+
+.activities-section p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.flip-card-back ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.flip-card-back ul li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        color: white;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        color: #ffeb3b;
+    }
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .moving-text {
+        font-size: 40px;
+        gap: 4px;
+    }
+
+    .sub-text {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .program-title {
+        font-size: 30px;
+    }
+
+    .flip-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
